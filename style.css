@@ -28,13 +28,6 @@
           transform: translateY(5px);
 }
 
-.portfolio-section,
-.personal-section,
-.contact-section,
-.about-section {
-  padding-top: 10vh;
-}
-
 .loading-screen {
   position: relative;
   padding-left: 0;
@@ -117,53 +110,54 @@ section {
   height: 100vh;
 }
 
-input[type=text],
-[type=email],
-select,
+input,
 textarea {
-  font-size: 2rem;
+  color: #AD0A0E;
+  font-size: 3rem;
   width: 100%;
   padding: 12px;
-  border: 1px solid whitesmoke;
+  border: 3px solid #F6F6F8;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin: .5rem 0;
   resize: vertical;
-  background-color: whitesmoke;
+  background-color: #F6F6F8;
+  font-family: 'Lato', sans-serif !important;
 }
 
-label,
+label {
+  font-size: 3rem;
+  color: #F6F6F8;
+  font-family: 'Lato', sans-serif !important;
+}
+
 textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder {
-  font-size: 3rem;
   color: #AD0A0E;
   font-family: 'Lato', sans-serif !important;
+  font-size: 3rem;
 }
 
-label,
 textarea:-ms-input-placeholder,
 input:-ms-input-placeholder {
-  font-size: 3rem;
   color: #AD0A0E;
   font-family: 'Lato', sans-serif !important;
+  font-size: 3rem;
 }
 
-label,
 textarea::-ms-input-placeholder,
 input::-ms-input-placeholder {
-  font-size: 3rem;
   color: #AD0A0E;
   font-family: 'Lato', sans-serif !important;
+  font-size: 3rem;
 }
 
-label,
 textarea::placeholder,
 input::placeholder {
-  font-size: 3rem;
   color: #AD0A0E;
   font-family: 'Lato', sans-serif !important;
+  font-size: 3rem;
 }
 
 button[type=submit] {
@@ -224,21 +218,21 @@ button[type=submit]:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
 .about-section__header {
   position: absolute;
-  top: 15%;
+  top: 2.5%;
   left: 2.5%;
-  font-size: 15rem;
+  font-size: 8rem;
   color: #F6F6F8;
 }
 
 .about-section__title-wrapper {
-  position: absolute;
-  top: 20%;
-  left: 50%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,6 +247,7 @@ button[type=submit]:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: static;
 }
 
 .about-section__title-wrapper__h2 {
@@ -260,8 +255,14 @@ button[type=submit]:hover {
   top: 50%;
   color: #F6F6F8;
   font-size: 3rem;
-  margin-bottom: 12.5px;
+  margin-bottom: 3rem;
   text-align: center;
+}
+
+.about-section__title-wrapper__icon {
+  font-size: 12rem;
+  color: #F6F6F8;
+  margin-bottom: 3rem;
 }
 
 .about-section__triangle-background {
@@ -349,27 +350,21 @@ button[type=submit]:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .contact-section__header {
   overflow: initial;
   font-size: 10rem;
   color: #F6F6F8;
-  margin: 2.5rem 0;
 }
 
 .contact-section__sub-header {
   color: #F6F6F8;
   font-size: 4rem;
-  margin: 2.5rem 0;
-  text-align: center;
 }
 
 .contact-section__submit-btn {
@@ -535,7 +530,7 @@ button[type=submit]:hover {
 
 .nav-bar__logo {
   position: absolute;
-  top: 5%;
+  top: 2rem;
   width: 140px;
   margin-left: 2.5%;
   font-family: 'Raleway', sans-serif;
@@ -753,34 +748,25 @@ button[type=submit]:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
 }
 
 .portfolio-section__header {
-  position: static;
-  overflow: initial;
-  font-size: 10rem;
+  font-size: 8rem;
   color: #AD0A0E;
-  text-align: center;
-  margin: 2.5rem 0;
 }
 
 .portfolio-section__sub-header {
-  text-align: center;
   overflow: initial;
   color: #AD0A0E;
   font-size: 4rem;
-  margin: 2.5rem 0;
 }
 
 @media only screen and (max-width: 480px) {

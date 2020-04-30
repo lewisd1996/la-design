@@ -6,32 +6,35 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         position: relative;
         &__header {
             position: absolute;
-            top: 15%;
+            top: 2.5%;
             left: 2.5%;
-            font-size: 15rem;
+            font-size: 8rem;
             color: $base-colour-white;
         }
         &__title-wrapper {
-            position: absolute;
-            top: 20%;
-            left: 50%;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            position: static;
             &__h2 {
                 left: 0;
                 top: 50%;
                 color: $base-colour-white;
                 font-size: 3rem;
-                margin-bottom: 12.5px;
+                margin-bottom: 3rem;
                 text-align: center;
             }
-            &__icon {}
+            &__icon {
+                font-size: 12rem;
+                color: $base-colour-white;
+                margin-bottom: 3rem
+            }
         }
         &__triangle-background {
             min-width: 100%;

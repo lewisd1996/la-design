@@ -2,20 +2,16 @@
         background-color: $base-colour-red;
         display: flex;
         flex-direction: column;
-        align-items: center;
         position: relative;
-        justify-content: center;
+        justify-content: space-evenly;
         &__header {
             overflow: initial;
             font-size: 10rem;
             color: $base-colour-white;
-            margin: 2.5rem 0;
         }
         &__sub-header {
             color: $base-colour-white;
             font-size: 4rem;
-            margin: 2.5rem 0;
-            text-align: center;
         }
         &__submit-btn {
             margin-top: 2rem;

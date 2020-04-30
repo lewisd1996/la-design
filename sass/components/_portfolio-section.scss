@@ -1,24 +1,17 @@
                             .portfolio-section {
                                 background-color: whitesmoke;
                                 display: flex;
-                                justify-content: center;
+                                justify-content: space-evenly;
                                 flex-direction: column;
-                                align-items: center;
                                 position: relative;
                                 &__header {
-                                    position: static;
-                                    overflow: initial;
-                                    font-size: 10rem;
+                                    font-size: 8rem;
                                     color: $base-colour-red;
-                                    text-align: center;
-                                    margin: 2.5rem 0;
                                 }
                                 &__sub-header {
-                                    text-align: center;
                                     overflow: initial;
                                     color: $base-colour-red;
                                     font-size: 4rem;
-                                    margin: 2.5rem 0;
                                 }
                             }
                             

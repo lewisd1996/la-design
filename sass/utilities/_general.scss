@@ -27,28 +27,32 @@
                     height: 100vh;
                 }
                 
-                input[type=text],
-                [type=email],
-                select,
+                input,
                 textarea {
-                    font-size: 2rem;
+                    color: $base-colour-red;
+                    font-size: 3rem;
                     width: 100%;
                     padding: 12px;
-                    border: 1px solid whitesmoke;
+                    border: 3px solid $base-colour-white;
                     border-radius: 4px;
                     box-sizing: border-box;
-                    margin-top: 6px;
-                    margin-bottom: 16px;
+                    margin: .5rem 0;
                     resize: vertical;
-                    background-color: whitesmoke;
+                    background-color: $base-colour-white;
+                    font-family: 'Lato', sans-serif !important;
                 }
                 
-                label,
+                label {
+                    font-size: 3rem;
+                    color: $base-colour-white;
+                    font-family: 'Lato', sans-serif !important;
+                }
+                
                 textarea::placeholder,
                 input::placeholder {
-                    font-size: 3rem;
                     color: $base-colour-red;
                     font-family: 'Lato', sans-serif !important;
+                    font-size: 3rem;
                 }
                 
                 button[type=submit] {
