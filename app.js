@@ -39,6 +39,7 @@ var Controller = (function() {
         transitions: [{
             name: 'opacity-transition',
             leave(data) {
+                document.getElementById("nav-bar").style.pointerEvents = "none";
                 document.documentElement.style.overflow = "hidden";
                 pageTransition()
                 return gsap.to(data.current.container, {
@@ -48,6 +49,7 @@ var Controller = (function() {
             enter(data) {
                 pageTransition()
                 document.documentElement.style.overflow = "visible";
+                document.getElementById("nav-bar").style.pointerEvents = "all";
                 return gsap.from(data.next.container, {
                     opacity: 0,
                 });
@@ -106,7 +108,6 @@ var UIController = (function() {
 
 })();
 window.addEventListener('DOMContentLoaded', (event) => {
-    console.log(document.URL)
     if (document.URL.includes("index.html")) {
         UIController.updateNav("home");
         setInterval(UIController.changeTitle, 3000);
@@ -117,7 +118,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     } else if (document.URL.includes("contact.html")) {
         UIController.updateNav("contact");
     } else {
-        console.log("Unknown error");
+        UIController.updateNav("home");
+        setInterval(UIController.changeTitle, 3000);
     }
 
     try {
