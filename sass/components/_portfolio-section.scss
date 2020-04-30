@@ -1,0 +1,122 @@
+                            .portfolio-section {
+                                background-color: whitesmoke;
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                                align-items: center;
+                                position: relative;
+                                &__header {
+                                    position: static;
+                                    overflow: initial;
+                                    font-size: 10rem;
+                                    color: $base-colour-red;
+                                    text-align: center;
+                                    margin: 2.5rem 0;
+                                }
+                                &__sub-header {
+                                    text-align: center;
+                                    overflow: initial;
+                                    color: $base-colour-red;
+                                    font-size: 4rem;
+                                    margin: 2.5rem 0;
+                                }
+                            }
+                            
+                            //---------------------------------MOBILE---------------------------------
+                            @media only screen and (max-width: 480px) {
+                                .portfolio-section {
+                                    background: rgb(246, 246, 248);
+                                    background: -moz-linear-gradient( 0deg, rgba(246, 246, 248, 1) 60%, rgba(255, 246, 247, 1) 100%);
+                                    background: -webkit-linear-gradient( 0deg, rgba(246, 246, 248, 1) 60%, rgba(255, 246, 247, 1) 100%);
+                                    background: linear-gradient( 0deg, rgba(246, 246, 248, 1) 60%, rgba(255, 246, 247, 1) 100%);
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    &__header {
+                                        top: 3%;
+                                        left: 2.5%;
+                                        position: absolute;
+                                        font-size: 5rem;
+                                        color: $base-colour-white;
+                                        margin: 0;
+                                    }
+                                    &__sub-header {
+                                        text-align: center;
+                                        overflow: initial;
+                                        color: $base-colour-red;
+                                        font-size: 5rem;
+                                        margin: 5rem;
+                                    }
+                                    &__mobile-title-tab-background {
+                                        clip-path: polygon(0% 20%, 80% 20%, 100% 80%, 0% 80%);
+                                        background: rgb(173, 10, 14);
+                                        background: -moz-linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
+                                        background: -webkit-linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
+                                        background: linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
+                                        height: 10%;
+                                        width: 50%;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                    }
+                                }
+                            }
+                            
+                            .grid-container {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                grid-template-rows: 1fr 1fr;
+                                gap: 20px;
+                                grid-template-areas: "Obj-1 Obj-2" "Obj-3 Obj-4";
+                                width: 100%;
+                                height: 70%;
+                                &__text {
+                                    margin-top: 5rem;
+                                    font-size: 3rem;
+                                }
+                            }
+                            
+                            .grid-container div {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: space-between;
+                                border: 3px solid $base-colour-red;
+                                padding: 2.5rem;
+                                font-size: 4rem;
+                                color: $base-colour-red;
+                                cursor: pointer;
+                                transition: all .5s;
+                                &:hover {
+                                    color: $base-colour-white;
+                                    background: rgb(173, 10, 14);
+                                    background: -moz-linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
+                                    background: -webkit-linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
+                                    background: linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
+                                }
+                            }
+                            
+                            .Obj-1 {
+                                grid-area: Obj-1;
+                            }
+                            
+                            .Obj-2 {
+                                grid-area: Obj-2;
+                            }
+                            
+                            .Obj-3 {
+                                grid-area: Obj-3;
+                            }
+                            
+                            .Obj-4 {
+                                grid-area: Obj-4;
+                            }
+                            
+                            .Obj-5 {
+                                grid-area: Obj-5;
+                            }
+                            
+                            .Obj-6 {
+                                grid-area: Obj-6;
+                            }

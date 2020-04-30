@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>LA DESIGN</title>
+</head>
+<div class="loading-container">
+    <div class="loading-screen">
+        <img src="img/logo-red.png" alt=" logo " class="loading-screen__logo">
+    </div>
+</div>
+
+<body data-barba="wrapper">
+
+    <nav class="nav-bar" id="nav-bar">
+        <img src="img/logo-red.png" alt=" logo " class="nav-bar__logo ">
+        <i class="fa fa-caret-left nav-bar__current-arrow" id="navCurrentArrow"></i>
+        <ul class="nav-bar__ul ">
+
+            <li class="nav-bar__ul__nav-link " id="home-link"><a class="nav-bar__ul__nav-link__a" href="/index.html">Home</a></li>
+            <li class="nav-bar__ul__nav-link " id="about-link"><a class="nav-bar__ul__nav-link__a" href="/about.html ">About</a></li>
+            <li class="nav-bar__ul__nav-link " id="portfolio-link"><a class="nav-bar__ul__nav-link__a" href="/portfolio.html">Portfolio</a></li>
+            <li class="nav-bar__ul__nav-link " id="contact-link"><a class="nav-bar__ul__nav-link__a" href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile-nav-bar hide-menu " id="mobile-nav-bar">
+        <img src="img/logo-red.png " alt="logo " class="mobile-nav-bar__logo ">
+        <ul class="mobile-nav-bar__ul ">
+            <li class="mobile-nav-bar__ul__nav-link " id="home-link ">
+                <a class="mobile-nav-bar__ul__nav-link__a " href="/index.html ">Home</a>
+            </li>
+            <li class="mobile-nav-bar__ul__nav-link " id="about-link ">
+                <a class="mobile-nav-bar__ul__nav-link__a " href="/about.html ">About</a>
+            </li>
+            <li class="mobile-nav-bar__ul__nav-link " id="portfolio-link ">
+                <a class="mobile-nav-bar__ul__nav-link__a " href="/portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-nav-bar__ul__nav-link " id="contact-link ">
+                <a class="mobile-nav-bar__ul__nav-link__a " href="/contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="mobile-nav-toggle">
+        <i class="fa fa-bars mobile-nav-toggle__burger-toggle" id="mobileBurgerIcon"></i>
+        <i class="fa fa-times mobile-nav-toggle__close-toggle hide-icon" id="mobileCloseIcon"></i>
+    </div>
+    <main data-barba="container" data-barba-namespace="portfolio">
+        <section class="child portfolio-section" id="portfolioSection">
+            <div class="portfolio-section__mobile-title-tab-background"></div>
+            <h1 class="portfolio-section__header" id="changeText">Portfolio</h1>
+            <h2 class="portfolio-section__sub-header" id="changeText">Some of our recent work</h2>
+            <div class="grid-container">
+                <div class="Obj-1">
+                    <h2>Help With PA.</h2>
+                    <p class="grid-container__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor facilis recusandae fuga.</p>
+                </div>
+                <div class="Obj-2">
+                    <h2>Chambers Briefcase.</h2>
+                    <p class="grid-container__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor facilis recusandae fuga.</p>
+                </div>
+                <div class="Obj-3">
+                    <h2>STU.</h2>
+                    <p class="grid-container__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor facilis recusandae fuga.</p>
+                </div>
+                <div class="Obj-4">
+                    <h2>Quarter MCR.</h2>
+                    <p class="grid-container__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor facilis recusandae fuga.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="/node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

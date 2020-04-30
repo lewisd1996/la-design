@@ -1,0 +1,70 @@
+                .button-wrapper {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                #changeText {
+                    opacity: 1;
+                    transition: opacity 1s ease-out;
+                }
+                
+                .hide {
+                    opacity: 0;
+                    transition: all .5s ease-in;
+                }
+                
+                .move-arrow {
+                    transform: translateY(5px);
+                }
+                
+                .portfolio-section,
+                .personal-section,
+                .contact-section,
+                .about-section {
+                    padding-top: 10vh;
+                }
+                
+                .loading-screen {
+                    position: relative;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-top: 0;
+                    background-color: $base-colour-white;
+                    margin-left: 10vw;
+                    width: 100%;
+                    height: 100%;
+                    transform: scaleY(0) skewX(0);
+                    transform-origin: top left;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &__logo {
+                        width: 30%;
+                    }
+                }
+                
+                .loading-container {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100vh;
+                    overflow: hidden;
+                    z-index: 10;
+                    pointer-events: none;
+                    z-index: 1000;
+                }
+                
+                @media only screen and (max-width: 480px) {
+                    .portfolio-section,
+                    .personal-section,
+                    .contact-section,
+                    .about-section {
+                        padding-top: 0;
+                    }
+                    .loading-screen {
+                        margin-left: 0;
+                    }
+                }

@@ -1,0 +1,89 @@
+                *,
+                *:before,
+                *:after {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                html,
+                body {
+                    height: 100%;
+                    font-weight: normal;
+                    font-size: 10px;
+                    font-family: 'Lato', sans-serif;
+                    background-color: $base-colour-red;
+                    overflow: hidden;
+                }
+                
+                .container {
+                    height: 100%;
+                    width: 100%;
+                }
+                
+                section {
+                    padding: 25px;
+                    margin-left: 10vw;
+                    height: 100vh;
+                }
+                
+                input[type=text],
+                [type=email],
+                select,
+                textarea {
+                    font-size: 2rem;
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid whitesmoke;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                    background-color: whitesmoke;
+                }
+                
+                label,
+                textarea::placeholder,
+                input::placeholder {
+                    font-size: 3rem;
+                    color: $base-colour-red;
+                    font-family: 'Lato', sans-serif !important;
+                }
+                
+                button[type=submit] {
+                    min-width: 20%;
+                    background-color: whitesmoke;
+                    color: $base-colour-red;
+                    padding: 12px 20px;
+                    border: 3px solid transparent;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all .5s;
+                }
+                
+                button[type=submit]:hover {
+                    background-color: transparent;
+                    border: 3px solid whitesmoke;
+                    color: whitesmoke;
+                    transition: all .5s;
+                }
+                
+                @media only screen and (max-width: 480px) {
+                    html,
+                    body {
+                        font-size: 5px;
+                    }
+                    label {
+                        font-size: 3rem;
+                        color: $base-colour-white;
+                    }
+                    section {
+                        padding: 25px;
+                        margin-left: 0;
+                        height: 100vh;
+                    }
+                }
