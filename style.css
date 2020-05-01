@@ -315,8 +315,8 @@ button[type=submit]:hover {
   background-color: #F6F6F8;
   width: 100%;
   height: 100%;
-  -webkit-transform: perspective(600px) rotateY(180deg);
-          transform: perspective(600px) rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
@@ -346,8 +346,8 @@ button[type=submit]:hover {
 }
 
 .hover-area:hover .about-section__title-wrapper__card {
-  -webkit-transform: perspective(600px) rotateY(180deg);
-          transform: perspective(600px) rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 @media only screen and (max-width: 480px) {

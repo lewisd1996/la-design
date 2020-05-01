@@ -108,10 +108,7 @@ var UIController = (function() {
 
 })();
 window.addEventListener('DOMContentLoaded', (event) => {
-    if (document.URL.includes("index.html")) {
-        UIController.updateNav("home");
-        setInterval(UIController.changeTitle, 3000);
-    } else if (document.URL.includes("about.html")) {
+    if (document.URL.includes("about.html")) {
         UIController.updateNav("about");
     } else if (document.URL.includes("portfolio.html")) {
         UIController.updateNav("portfolio");
