@@ -113,7 +113,7 @@ section {
 input,
 textarea {
   color: #AD0A0E;
-  font-size: 3rem;
+  font-size: 2rem;
   width: 100%;
   padding: 12px;
   border: 3px solid #F6F6F8;
@@ -127,7 +127,7 @@ textarea {
 }
 
 label {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #F6F6F8;
   font-family: 'Lato', sans-serif !important;
 }
@@ -136,28 +136,28 @@ textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder {
   color: #AD0A0E;
   font-family: 'Lato', sans-serif !important;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 textarea:-ms-input-placeholder,
 input:-ms-input-placeholder {
   color: #AD0A0E;
   font-family: 'Lato', sans-serif !important;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 textarea::-ms-input-placeholder,
 input::-ms-input-placeholder {
   color: #AD0A0E;
   font-family: 'Lato', sans-serif !important;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 textarea::placeholder,
 input::placeholder {
   color: #AD0A0E;
   font-family: 'Lato', sans-serif !important;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 button[type=submit] {
