@@ -76,6 +76,10 @@
                     transition: all .5s;
                 }
                 
+                textarea {
+                    height: 30rem;
+                }
+                
                 @media only screen and (max-width: 480px) {
                     html,
                     body {
@@ -89,5 +93,8 @@
                         padding: 25px;
                         margin-left: 0;
                         height: 100vh;
+                    }
+                    textarea {
+                        height: 15rem;
                     }
                 }

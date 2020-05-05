@@ -189,6 +189,10 @@ button[type=submit]:hover {
   transition: all .5s;
 }
 
+textarea {
+  height: 30rem;
+}
+
 @media only screen and (max-width: 480px) {
   html,
   body {
@@ -202,6 +206,9 @@ button[type=submit]:hover {
     padding: 25px;
     margin-left: 0;
     height: 100vh;
+  }
+  textarea {
+    height: 15rem;
   }
 }
 
@@ -329,7 +336,7 @@ button[type=submit]:hover {
 }
 
 .about-section__title-wrapper__icon {
-  font-size: 12rem;
+  font-size: 20rem;
   color: #AD0A0E;
   margin-bottom: 3rem;
 }
@@ -487,9 +494,14 @@ button[type=submit]:hover {
   }
   .about-section__title-wrapper__h2 {
     color: #AD0A0E;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 0;
     text-align: center;
+  }
+  .about-section__title-wrapper__icon {
+    font-size: 5rem;
+    color: #AD0A0E;
+    margin-bottom: 3rem;
   }
   .about-section__triangle-background {
     display: none;
@@ -554,8 +566,14 @@ button[type=submit]:hover {
 }
 
 @media only screen and (max-width: 480px) {
+  .contact-section {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .contact-section__submit-btn {
     width: 100%;
+    height: 10rem;
   }
   .contact-section__header {
     top: 3%;
@@ -567,8 +585,8 @@ button[type=submit]:hover {
   }
   .contact-section__sub-header {
     color: #F6F6F8;
-    font-size: 6rem;
-    margin: 5rem 0;
+    font-size: 4rem;
+    margin-bottom: 2rem;
   }
   .contact-section__mobile-title-tab-background {
     -webkit-clip-path: polygon(0% 20%, 80% 20%, 100% 80%, 0% 80%);
@@ -973,53 +991,6 @@ button[type=submit]:hover {
   font-size: 4rem;
 }
 
-@media only screen and (max-width: 480px) {
-  .portfolio-section {
-    background: #f6f6f8;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #f6f6f8), to(#fff6f7));
-    background: linear-gradient(0deg, #f6f6f8 60%, #fff6f7 100%);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .portfolio-section__header {
-    top: 3%;
-    left: 2.5%;
-    position: absolute;
-    font-size: 5rem;
-    color: #F6F6F8;
-    margin: 0;
-  }
-  .portfolio-section__sub-header {
-    text-align: center;
-    overflow: initial;
-    color: #AD0A0E;
-    font-size: 5rem;
-    margin: 5rem;
-  }
-  .portfolio-section__mobile-title-tab-background {
-    -webkit-clip-path: polygon(0% 20%, 80% 20%, 100% 80%, 0% 80%);
-            clip-path: polygon(0% 20%, 80% 20%, 100% 80%, 0% 80%);
-    background: #ad0a0e;
-    background: linear-gradient(228deg, #ad0a0e 31%, #df0f14 100%);
-    height: 10%;
-    width: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-
 .grid-container {
   display: -ms-grid;
   display: grid;
@@ -1071,31 +1042,159 @@ button[type=submit]:hover {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: Obj-1;
+  position: relative;
 }
 
 .Obj-2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: Obj-2;
+  position: relative;
 }
 
 .Obj-3 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: Obj-3;
+  position: relative;
 }
 
 .Obj-4 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: Obj-4;
+  position: relative;
 }
 
-.Obj-5 {
-  grid-area: Obj-5;
+.construction-icon {
+  position: absolute;
+  top: 5%;
+  right: 2.5%;
 }
 
-.Obj-6 {
-  grid-area: Obj-6;
+@media only screen and (max-width: 480px) {
+  .portfolio-section {
+    background: #f6f6f8;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, #f6f6f8), to(#fff6f7));
+    background: linear-gradient(0deg, #f6f6f8 60%, #fff6f7 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio-section__header {
+    top: 3%;
+    left: 2.5%;
+    position: absolute;
+    font-size: 5rem;
+    color: #F6F6F8;
+    margin: 0;
+  }
+  .portfolio-section__sub-header {
+    text-align: center;
+    overflow: initial;
+    color: #AD0A0E;
+    font-size: 5rem;
+    margin: 5rem;
+  }
+  .portfolio-section__mobile-title-tab-background {
+    -webkit-clip-path: polygon(0% 20%, 80% 20%, 100% 80%, 0% 80%);
+            clip-path: polygon(0% 20%, 80% 20%, 100% 80%, 0% 80%);
+    background: #ad0a0e;
+    background: linear-gradient(228deg, #ad0a0e 31%, #df0f14 100%);
+    height: 10%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .obj-title {
+    font-size: 3rem;
+  }
+  .grid-container {
+    margin-top: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .grid-container__text {
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+  }
+  .grid-container div {
+    margin-bottom: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 3px solid #AD0A0E;
+    padding: 2.5rem;
+    font-size: 4rem;
+    color: #AD0A0E;
+    cursor: pointer;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .grid-container div:hover {
+    color: #F6F6F8;
+    background: #ad0a0e;
+    background: linear-gradient(228deg, #ad0a0e 31%, #df0f14 100%);
+  }
+  .Obj-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: Obj-1;
+    position: relative;
+  }
+  .Obj-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: Obj-2;
+    position: relative;
+  }
+  .Obj-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: Obj-3;
+    position: relative;
+  }
+  .Obj-4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: Obj-4;
+    position: relative;
+  }
+  .construction-icon {
+    position: absolute;
+    top: 5%;
+    right: 2.5%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

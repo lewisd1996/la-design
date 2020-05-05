@@ -67,7 +67,7 @@
                     text-align: center;
                 }
                 &__icon {
-                    font-size: 12rem;
+                    font-size: 20rem;
                     color: $base-colour-red;
                     margin-bottom: 3rem
                 }
@@ -174,9 +174,14 @@
                     }
                     &__h2 {
                         color: $base-colour-red;
-                        font-size: 3rem;
+                        font-size: 2rem;
                         margin-bottom: 0;
                         text-align: center;
+                    }
+                    &__icon {
+                        font-size: 5rem;
+                        color: $base-colour-red;
+                        margin-bottom: 3rem
                     }
                 }
                 &__triangle-background {

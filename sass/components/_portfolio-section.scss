@@ -15,6 +15,66 @@
                                 }
                             }
                             
+                            .grid-container {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                grid-template-rows: 1fr 1fr;
+                                gap: 20px;
+                                grid-template-areas: "Obj-1 Obj-2" "Obj-3 Obj-4";
+                                width: 100%;
+                                height: 70%;
+                                &__text {
+                                    margin-top: 5rem;
+                                    font-size: 3rem;
+                                }
+                            }
+                            
+                            .grid-container div {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: space-between;
+                                border: 3px solid $base-colour-red;
+                                padding: 2.5rem;
+                                font-size: 4rem;
+                                color: $base-colour-red;
+                                cursor: pointer;
+                                transition: all .5s;
+                                &:hover {
+                                    color: $base-colour-white;
+                                    background: rgb(173, 10, 14);
+                                    background: -moz-linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
+                                    background: -webkit-linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
+                                    background: linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
+                                }
+                            }
+                            
+                            .Obj-1 {
+                                grid-area: Obj-1;
+                                position: relative;
+                            }
+                            
+                            .Obj-2 {
+                                grid-area: Obj-2;
+                                position: relative;
+                            }
+                            
+                            .Obj-3 {
+                                grid-area: Obj-3;
+                                position: relative;
+                            }
+                            
+                            .Obj-4 {
+                                grid-area: Obj-4;
+                                position: relative;
+                            }
+                            
+                            .construction-icon {
+                                position: absolute;
+                                top: 5%;
+                                right: 2.5%;
+                            }
+                            
                             //---------------------------------MOBILE---------------------------------
                             @media only screen and (max-width: 480px) {
                                 .portfolio-section {
@@ -54,62 +114,60 @@
                                         left: 0;
                                     }
                                 }
-                            }
-                            
-                            .grid-container {
-                                display: grid;
-                                grid-template-columns: 1fr 1fr;
-                                grid-template-rows: 1fr 1fr;
-                                gap: 20px;
-                                grid-template-areas: "Obj-1 Obj-2" "Obj-3 Obj-4";
-                                width: 100%;
-                                height: 70%;
-                                &__text {
-                                    margin-top: 5rem;
+                                .obj-title {
                                     font-size: 3rem;
                                 }
-                            }
-                            
-                            .grid-container div {
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
-                                justify-content: space-between;
-                                border: 3px solid $base-colour-red;
-                                padding: 2.5rem;
-                                font-size: 4rem;
-                                color: $base-colour-red;
-                                cursor: pointer;
-                                transition: all .5s;
-                                &:hover {
-                                    color: $base-colour-white;
-                                    background: rgb(173, 10, 14);
-                                    background: -moz-linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
-                                    background: -webkit-linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
-                                    background: linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
+                                .grid-container {
+                                    margin-top: 15%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    width: 100%;
+                                    height: 100%;
+                                    &__text {
+                                        margin-top: 2.5rem;
+                                        font-size: 2.5rem;
+                                    }
                                 }
-                            }
-                            
-                            .Obj-1 {
-                                grid-area: Obj-1;
-                            }
-                            
-                            .Obj-2 {
-                                grid-area: Obj-2;
-                            }
-                            
-                            .Obj-3 {
-                                grid-area: Obj-3;
-                            }
-                            
-                            .Obj-4 {
-                                grid-area: Obj-4;
-                            }
-                            
-                            .Obj-5 {
-                                grid-area: Obj-5;
-                            }
-                            
-                            .Obj-6 {
-                                grid-area: Obj-6;
+                                .grid-container div {
+                                    margin-bottom: 15%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    justify-content: space-between;
+                                    border: 3px solid $base-colour-red;
+                                    padding: 2.5rem;
+                                    font-size: 4rem;
+                                    color: $base-colour-red;
+                                    cursor: pointer;
+                                    transition: all .5s;
+                                    &:hover {
+                                        color: $base-colour-white;
+                                        background: rgb(173, 10, 14);
+                                        background: -moz-linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
+                                        background: -webkit-linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
+                                        background: linear-gradient(228deg, rgba(173, 10, 14, 1) 31%, rgba(223, 15, 20, 1) 100%);
+                                    }
+                                }
+                                .Obj-1 {
+                                    grid-area: Obj-1;
+                                    position: relative;
+                                }
+                                .Obj-2 {
+                                    grid-area: Obj-2;
+                                    position: relative;
+                                }
+                                .Obj-3 {
+                                    grid-area: Obj-3;
+                                    position: relative;
+                                }
+                                .Obj-4 {
+                                    grid-area: Obj-4;
+                                    position: relative;
+                                }
+                                .construction-icon {
+                                    position: absolute;
+                                    top: 5%;
+                                    right: 2.5%;
+                                }
                             }
