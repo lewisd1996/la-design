@@ -3,12 +3,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: rgb(246, 246, 248);
-    background: -moz-linear-gradient( 0deg, rgba(246, 246, 248, 1) 60%, rgba(255, 246, 247, 1) 100%);
-    background: -webkit-linear-gradient( 0deg, rgba(246, 246, 248, 1) 60%, rgba(255, 246, 247, 1) 100%);
-    background: linear-gradient( 0deg, rgba(246, 246, 248, 1) 60%, rgba(255, 246, 247, 1) 100%);
+    z-index: 10;
     &__logo {
         width: 600px;
+        z-index: 10;
     }
     &__header-wrapper {
         width: 100%;
@@ -16,6 +14,7 @@
         height: 250px;
         justify-content: center;
         align-items: center;
+        z-index: 10;
         &__header {
             font-size: 15rem;
             font-weight: bold;
@@ -26,6 +25,7 @@
         }
     }
     &__sub-header {
+        z-index: 10;
         text-align: center;
         font-size: 5rem;
         margin-bottom: 50px;
@@ -37,6 +37,29 @@
         transition: all 1s;
         color: $base-colour-red-light;
     }
+}
+
+#landingVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 5;
+}
+
+#videoOverlay {
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(246, 246, 248);
+    background: -moz-linear-gradient( 0deg, rgba(246, 246, 248, 1) 60%, rgba(255, 246, 247, 1) 100%);
+    background: -webkit-linear-gradient( 0deg, rgba(246, 246, 248, 1) 60%, rgba(255, 246, 247, 1) 100%);
+    background: linear-gradient( 0deg, rgba(246, 246, 248, 1) 60%, rgba(255, 246, 247, 1) 100%);
+    opacity: 0.85;
 }
 
 @media only screen and (max-width: 480px) {

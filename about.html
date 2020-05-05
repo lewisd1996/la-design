@@ -54,9 +54,10 @@
     </div>
     <main data-barba="container" data-barba-namespace="about">
         <section class="child about-section" id="aboutSection">
-            <div class="about-section__mobile-title-tab-background"></div>
-            <h1 class="about-section__header" id="changeText">About Us</h1>
-            <div class="about-section__title-wrapper">
+            <!---------------------------------------------------------------DESKTOP CARDS--------------------------------------------------------------->
+
+            <div class="about-section__title-wrapper desktop-show">
+                <h1 class="about-section__header" id="changeText">About Us</h1>
                 <div class="hover-area">
                     <div class="about-section__title-wrapper__card">
                         <div class="about-section__title-wrapper__card__front">
@@ -103,9 +104,58 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+            <!---------------------------------------------------------------MOBILE CARDS--------------------------------------------------------------->
+            <div class="about-section__mobile-title-tab-background"></div>
+            <h1 class="about-section__header" id="changeText">About Us</h1>
+            <div class="about-section__title-wrapper mobile-show">
+                <div class="hover-area-mobile" id="mobile-hover-1">
+                    <div class="about-section__title-wrapper__card" id="mobile-card-1">
+                        <div class="about-section__title-wrapper__card__front">
+                            <h2 class="about-section__title-wrapper__h2">Who are we?</h2>
+                        </div>
+                        <div class="about-section__title-wrapper__card__back">
+                            <i class="fas fa-people-carry about-section__title-wrapper__icon"></i>
+                            <h2 class="about-section__title-wrapper__h2">We are a dynamic duo based in Manchester, UK.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover-area-mobile" id="mobile-hover-2">
+                    <div class="about-section__title-wrapper__card" id="mobile-card-2">
+                        <div class="about-section__title-wrapper__card__front">
 
+                            <h2 class="about-section__title-wrapper__h2">What do we like to make?</h2>
+                        </div>
+                        <div class="about-section__title-wrapper__card__back">
+                            <i class="fas fa-laptop-code about-section__title-wrapper__icon"></i>
+                            <h2 class="about-section__title-wrapper__h2">We like to create beautiful websites.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover-area-mobile" id="mobile-hover-3">
+                    <div class="about-section__title-wrapper__card" id="mobile-card-3">
+                        <div class="about-section__title-wrapper__card__front">
+
+                            <h2 class="about-section__title-wrapper__h2">What else do we like to make?</h2>
+                        </div>
+                        <div class="about-section__title-wrapper__card__back">
+                            <i class="fas fa-database about-section__title-wrapper__icon"></i>
+                            <h2 class="about-section__title-wrapper__h2">We like create robust websites too!</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover-area-mobile" id="mobile-hover-4">
+                    <div class="about-section__title-wrapper__card" id="mobile-card-4">
+                        <div class="about-section__title-wrapper__card__front">
+                            <h2 class="about-section__title-wrapper__h2">How do we create them?</h2>
+                        </div>
+                        <div class="about-section__title-wrapper__card__back">
+                            <i class="fas fa-handshake about-section__title-wrapper__icon"></i>
+                            <h2 class="about-section__title-wrapper__h2">We bring your idea to life using YOUR input.<br><br>100% of the way.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
